@@ -5,7 +5,7 @@ using UnityEngine;
 public class Checkpoint : MonoBehaviour
 {
     public GameObject[] Checkpoints;
-    public GameObject FirstParkingBound;
+    //public GameObject FinishObject; (it's optinal. It can be Parking Area, Finish Line etc.)
     int count;
     AudioSource checkp;
 
@@ -27,9 +27,9 @@ public class Checkpoint : MonoBehaviour
             Checkpoints[count].SetActive(true);            
         }
         
-        else if (count == Checkpoints.Length-1)
-        {
-            FirstParkingBound.SetActive(true);
-        } 
+        //else if (count == Checkpoints.Length-1)
+        //{
+        //    FinishObject.SetActive(true);
+        //} 
     }
 }
